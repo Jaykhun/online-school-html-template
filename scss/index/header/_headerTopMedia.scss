@@ -1,0 +1,141 @@
+@media screen and (max-width: 1260px) {
+    .header-top {
+        #menu__btn:checked ~ .header-top__menu {
+            left: 0;
+        }
+        #menu__btn:checked ~ .header-top__btn > span {
+            transform: rotate(45deg);
+            &::before {
+                top: 0;
+                transform: rotate(0);
+                background-color: #fff;
+            }
+            &::after {
+                top: 0;
+                transform: rotate(-90deg);
+                background-color: #fff;
+            }
+        }
+
+        &__menu {
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            justify-content: flex-start;
+            background-color: #0009;
+            transition: $transition;
+            z-index: 1;
+            .header-form__btn {
+                display: block;
+                text-align: center;
+                width: 100%;
+            }
+        }
+
+        &__logo {
+            position: absolute;
+            top: 33px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &__btn {
+            margin-top: 2px;
+            width: 32px;
+            height: 22px;
+            transition: $transition;
+            cursor: pointer;
+            span {
+                position: relative;
+                top: 9px;
+                display: block;
+                width: 100%;
+                height: 2px;
+                background-color: $headerHoverLinkColor;
+                z-index: 2;
+                transition: $transition;
+                cursor: pointer;
+                &::before {
+                    display: block;
+                    content: "";
+                    position: absolute;
+                    top: -8px;
+                    width: 100%;
+                    height: 2px;
+                    background-color: $headerHoverLinkColor;
+                    transition: $transition;
+                }
+
+                &::after {
+                    display: block;
+                    content: "";
+                    position: absolute;
+                    top: 8px;
+                    width: 100%;
+                    height: 2px;
+                    background-color: $headerHoverLinkColor;
+                    transition: all 0.4s ease-in-out;
+                }
+            }
+        }
+
+        &__list {
+            margin: 20px 0px;
+            &:first-child {
+                margin-top: 15%;
+                margin-left: 0;
+            }
+            a {
+                text-align: center;
+                color: #fff;
+                letter-spacing: 0.6px;
+            }
+        }
+    }
+    .header-form {
+        &__btn {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header-top {
+        &__list {
+            &:first-child {
+                margin-top: 30%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-form {
+        &__register {
+            display: none;
+        }
+        img {
+            transform: scale(1.3);
+            margin-right: 3px;
+        }
+    }
+    .header-top {
+        &__list {
+            a {
+                font-size: 2em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header-top {
+        &__btn {
+            width: 30px;
+        }
+    }
+}

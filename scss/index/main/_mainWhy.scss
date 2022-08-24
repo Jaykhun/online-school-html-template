@@ -1,0 +1,40 @@
+.main-why {
+    margin-top: 180px;
+    margin-bottom: 180px;
+    &__wrapper {
+        @include flex(space-between);
+    }
+
+    &__img {
+        flex: 0 0 50%;
+        margin-right: 135px;
+    }
+
+    &__subtitle {
+        margin-bottom: 8px;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+        text-transform: capitalize;
+    }
+
+    &__list {
+        position: relative;
+        @include font($Lato, 1.6em);
+        @include text($mainWhyList);
+        margin-bottom: 12px;
+        &:nth-last-child(1) {
+            margin-bottom: 0px;
+        }
+        img {
+            position: absolute;
+            top: 2px;
+            left: -30px;
+        }
+    }
+    &__btn {
+        width: 161px;
+        margin-top: 48px;
+    }
+}

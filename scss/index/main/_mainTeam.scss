@@ -1,0 +1,61 @@
+.main-team {
+    background-color: $slidercg;
+    padding: 120px 0px 160px 0px;
+    &__subtitle {
+        margin-bottom: 8px;
+    }
+
+    &__top {
+        @include flex(space-between, center);
+    }
+}
+
+.team-slider {
+    margin-top: 60px;
+    &__btn {
+        margin-top: 8px;
+        span {
+            padding: 15px;
+            font-size: 1.6em;
+            color: $txtColor;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: 0.15s;
+            &:hover {
+                background-color: $sliderButtonBcgColor;
+                color: #fff;
+            }
+        }
+        .icon-left {
+            margin-right: 15px;
+        }
+    }
+
+    &__item {
+        margin: 0px 25px;
+    }
+
+    &__img {
+        background-color: $sliderImgBcgColor;
+        padding: 20px 20px 0px 20px;
+        border-radius: 4px;
+        img {
+            margin: auto;
+        }
+    }
+
+    &__content {
+        margin-top: 16px;
+    }
+
+    &__name {
+        @include font($Lato, 2em, 700);
+        @include text($sliderTeacherColor, capitalize, center);
+        margin-bottom: 4px;
+    }
+
+    &__course {
+        @include font($Lato, 1.6em);
+        @include text($sliderCourseColor, capitalize, center);
+    }
+}

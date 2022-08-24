@@ -1,0 +1,120 @@
+.main-post {
+    margin: 120px 0px 180px 0px;
+    &__subtitle {
+        margin-bottom: 8px;
+    }
+
+    &__top {
+        @include flex(space-between, center);
+        margin-bottom: 60px;
+    }
+
+    &__btn {
+        margin-top: 8px;
+        &.mediaBtn {
+            display: none;
+        }
+    }
+
+    &__body {
+        @include flex(space-between, center);
+    }
+
+    &__item {
+        margin: 0px 10px;
+    }
+
+    &__img {
+        background-image: url(../images/post/podcast.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        border-radius: 4px;
+    }
+
+    &__direction {
+        padding-top: 12px;
+        padding-left: 12px;
+        span {
+            font-family: $Lato;
+            margin-left: -4px;
+        }
+        i {
+            border-radius: 4px;
+            background-color: #fff;
+            color: $txtColor;
+            @include font($Lato, 1.6em);
+            padding: 5px 8px;
+        }
+    }
+
+    &__content {
+        margin-top: 16px;
+    }
+
+    &__info {
+        @include flex(flex-start, center);
+        color: $mainpostdataColor;
+        @include font($Lato, 1.4em);
+    }
+
+    &__data {
+        position: relative;
+        margin: 0px 40px;
+        font-family: $Lato;
+        &::before {
+            position: absolute;
+            left: -20px;
+            display: block;
+            content: "\e910";
+            font-family: "icomoon" !important;
+            font-size: inherit;
+        }
+    }
+
+    &__time {
+        font-family: $Lato;
+        position: relative;
+        &::before {
+            position: absolute;
+            left: -20px;
+            display: block;
+            content: "\e911";
+            font-family: "icomoon" !important;
+            font-size: inherit;
+        }
+    }
+
+    &__head {
+        margin: 8px 0px;
+        @include font($Lato, 2em, 700);
+        color: $mainPostContentTitle;
+    }
+
+    &__txt {
+        @include font($Lato, 1.6em);
+        color: $txtColor;
+    }
+
+    &__next {
+        margin-top: 16px;
+        display: flex;
+        align-items: center;
+        a {
+            @include font($Lato, 1.6em, 700);
+            color: $titleColor;
+            position: relative;
+            &::after {
+                position: absolute;
+                top: 2px;
+                right: -30px;
+                display: block;
+                content: "\e905";
+                font-family: "icomoon" !important;
+                font-size: inherit;
+                color: $mainPostArrowColor;
+            }
+        }
+    }
+}

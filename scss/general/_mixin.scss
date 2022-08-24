@@ -1,0 +1,18 @@
+@mixin font($fontFamily, $fontSize, $fontWeight: 400, $fontStyle: normal) {
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    font-style: $fontStyle;
+}
+@mixin flex($justify, $alignItems: stretch, $direction: row, $wrap: nowrap) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $alignItems;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
+@mixin text($color, $transform: none, $textalign: left) {
+    color: $color;
+    text-transform: $transform;
+    text-align: $textalign;
+}

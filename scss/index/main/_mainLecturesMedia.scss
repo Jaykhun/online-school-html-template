@@ -1,0 +1,68 @@
+@media screen and (max-width: 1200px) {
+    .main-lectures {
+        &__item {
+            flex-wrap: wrap;
+        }
+        &__data {
+            justify-content: flex-start;
+            flex: 0 0 100%;
+            margin-bottom: 20px;
+        }
+        &__content {
+            flex: 0 0 100%;
+            flex-wrap: wrap;
+        }
+        &__txt {
+            flex: 0 0 100%;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .main-lectures {
+        padding: 60px 0px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main-lectures {
+        &__title {
+            font-size: 3.6em;
+            margin-bottom: 40px;
+        }
+        &__item {
+            padding: 28px;
+        }
+        &__btn {
+            flex: 0 0 100%;
+        }
+        &__bottom {
+            flex-direction: column;
+        }
+        &__suggestion {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .main-lectures {
+        &__item {
+            padding: 25px;
+        }
+        &__bottom {
+            flex-direction: column;
+        }
+        &__suggestion {
+            margin-bottom: 20px;
+            margin-right: 0px;
+            font-size: 2.4em;
+        }
+        &__txt {
+            p {
+                font-size: 1.8em;
+            }
+        }
+    }
+}

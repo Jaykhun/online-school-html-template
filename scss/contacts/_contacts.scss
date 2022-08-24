@@ -1,0 +1,86 @@
+.main-contacts {
+    margin: 97px 0px 180px 0px;
+    &__wrapper {
+        @include flex(space-between, center);
+    }
+
+    &__subtitle {
+        margin-bottom: 8px;
+    }
+
+    &__info {
+        margin-top: 42px;
+        margin-bottom: 48px;
+        p {
+            @include font($Lato, 1.4em, 700);
+            color: $contactsInfoColor;
+            margin-bottom: 5px;
+        }
+        a {
+            @include font($Lato, 1.8em);
+            color: $titleColor;
+        }
+    }
+
+    &__email {
+        position: relative;
+        margin-bottom: 24px;
+        margin-left: 30px;
+        &::before {
+            position: absolute;
+            top: -3px;
+            left: -30px;
+            display: block;
+            content: "\e970";
+            font-family: "icomoon" !important;
+            font-size: 2em;
+            color: $contactsIconColor;
+        }
+    }
+
+    &__call {
+        position: relative;
+        margin-bottom: 24px;
+        margin-left: 30px;
+        &::before {
+            position: absolute;
+            top: -3px;
+            left: -30px;
+            display: block;
+            content: "\e90b";
+            font-family: "icomoon" !important;
+            font-size: 2em;
+            color: $contactsIconColor;
+        }
+    }
+
+    &__address {
+        position: relative;
+        margin-left: 30px;
+        &::before {
+            position: absolute;
+            top: -3px;
+            left: -30px;
+            display: block;
+            content: "\e90f";
+            font-family: "icomoon" !important;
+            font-size: 2em;
+            color: $contactsIconColor;
+        }
+    }
+
+    &__subhead {
+        margin-bottom: 25px;
+        @include font($Lato, 1.6em, 700);
+        @include text($titleColor, uppercase);
+    }
+    .div {
+        display: flex;
+        a {
+            display: block;
+            margin-right: 40px;
+            font-size: 2em;
+            color: $contactsInfoColor;
+        }
+    }
+}

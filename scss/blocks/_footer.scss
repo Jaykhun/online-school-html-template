@@ -1,0 +1,157 @@
+.footer {
+    background-color: #1e212c;
+    &__body {
+        padding: 82px 0px 62px 0px;
+        @include flex(space-between);
+    }
+
+    &__item {
+        flex: 0 0 23%;
+    }
+
+    &__logo {
+        margin-bottom: 25px;
+        display: block;
+    }
+
+    &__txt {
+        @include font($Lato, 1.2em);
+        color: $footerLinkCOlor;
+        line-height: 150%;
+        margin-bottom: 42px;
+    }
+
+    &__icons {
+        @include flex(space-between);
+        a {
+            display: block;
+            font-size: 2em;
+            color: $footerLinkCOlor;
+            transition: $transition;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+
+    &__content {
+        margin-left: -100px;
+        @include flex(space-between);
+        a {
+            display: block;
+            @include font($Lato, 1.6em);
+            color: $footerLinkCOlor;
+        }
+    }
+
+    &__title {
+        @include font($Lato, 1.6em);
+        text-transform: uppercase;
+        color: #fff;
+        letter-spacing: 1px;
+    }
+
+    &__map {
+        flex: 0 0 50%;
+        @include flex(space-between, stretch, column);
+    }
+    &__courses {
+        flex: 0 0 50%;
+        @include flex(space-between, stretch, column);
+    }
+
+    &__contacts {
+        .footer__title {
+            margin-bottom: 20px;
+        }
+        a {
+            margin-bottom: 16px;
+            &:nth-last-child(1) {
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    &__phone {
+        position: relative;
+        left: 20px;
+        &::before {
+            display: block;
+            content: "\e90b";
+            font-family: "icomoon" !important;
+            position: absolute;
+            left: -20px;
+        }
+    }
+
+    &__email {
+        position: relative;
+        left: 20px;
+        &::before {
+            display: block;
+            content: "\e90a";
+            font-family: "icomoon" !important;
+            position: absolute;
+            left: -20px;
+        }
+    }
+
+    &__form {
+        margin-top: 20px;
+        position: relative;
+        input[type="email"] {
+            width: 100%;
+            background-color: #fff1;
+            @include font($Lato, 1.2em);
+            color: $footerLinkCOlor;
+            padding: 9px 12px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        button {
+            height: 100%;
+            position: absolute;
+            top: 50%;
+            right: 5%;
+            transform: translate(-5%, -50%);
+            background-color: transparent;
+            font-size: 1em;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+
+    &__seo {
+        margin-top: 12px;
+        @include font($Lato, 1em);
+        color: $footerLinkCOlor;
+    }
+
+    &__bottom {
+        background-color: #fff1;
+        .container {
+            @include flex(space-between, center);
+            height: 58px;
+        }
+    }
+
+    &__made {
+        @include font($Lato, 1.2em);
+        color: $footerLinkCOlor;
+        span {
+            &::before {
+                content: "\e909";
+                font-family: "icomoon" !important;
+                font-size: 1.2em;
+                color: #ff3f3a;
+                margin: 0px 5px;
+            }
+        }
+    }
+
+    &__gotop {
+        a {
+            @include font($Lato, 1.4em, 700);
+            @include text($footerLinkCOlor, uppercase);
+        }
+    }
+}

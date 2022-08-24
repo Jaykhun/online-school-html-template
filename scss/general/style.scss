@@ -1,0 +1,52 @@
+@import "font";
+@import "reset";
+@import "ui";
+@import "mixin";
+@import "variables";
+@import "../blocks/headerTop";
+@import "../blocks/headerTopMedia";
+@import "../index/header/headerBody";
+@import "../index/header/headerBodyMedia";
+@import "../index/header/headerNumber";
+@import "../index/header/popup";
+@import "../index/main/mainWhy";
+@import "../index/main/mainWhyMedia";
+@import "../index/main/mainCourses";
+@import "../index/main/mainCoursesMedia";
+@import "../index/main/mainHowWeDo";
+@import "../index/main/mainHowWeDoMedia";
+@import "../index/main/mainLectures";
+@import "../index/main/mainLecturesMedia";
+@import "../index/main/mainCertificate";
+@import "../index/main/mainCertificateMedia";
+@import "../index/main/mainTeam";
+@import "../index/main/mainTeamMedia";
+@import "../blocks/slider";
+@import "../blocks/sliderMedia";
+@import "../index/main/mainPost";
+@import "../index/main/mainPostMedia";
+@import "../blocks/footerSubscribe";
+@import "../blocks/footerSubscribeMedia";
+@import "../blocks/footer";
+@import "../blocks/footerMedia";
+@import "../blog/_blog";
+@import "../courses/courses";
+@import "../courses/coursesMedia";
+@import "../events/events";
+@import "../aboutUs/aboutUs";
+@import "../aboutUs/aboutUsMedia";
+@import "../contacts/contacts";
+@import "../contacts/contactsMedia";
+
+.wrapper {
+    max-width: 1920px;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1260px;
+    margin: auto;
+    padding: 0 15px;
+}

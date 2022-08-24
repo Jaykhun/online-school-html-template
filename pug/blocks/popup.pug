@@ -1,0 +1,39 @@
+#popup.popup
+    .popup__body       
+        .popup__content
+            a.popup__close(href="#close")
+                span.icon-x
+            h3.popup__title Sign in
+            .popup__subtitle Sign in to your account using email and password provided during registration.
+            form(action="GET").form-popup
+                label.form-popup__email(for="form__email")
+                    span Email
+                input(
+                    type='email'
+                    name='signin'
+                    id="form__email"
+                    placeholder="Your working email" 
+                    defined
+                    )
+
+                label.form-popup__password(for="form__email")
+                    span Password
+                input(
+                    type='password'
+                    name='signin'
+                    id="form__password"
+                    placeholder="Your password" 
+                    )
+                input.form-popup__btn(
+                    type='button' 
+                    name='signin'
+                    value="Sign in"
+                    )
+            .form-popup__link 
+                .form-popup__sigin 
+                    span Or sign in with
+                .form-popup__icons 
+                    a(href="#").icon-facebook            
+                    a(href="#").icon-twitter            
+                    a(href="#").icon-instagram
+                    a(href="#").icon-linkedin             

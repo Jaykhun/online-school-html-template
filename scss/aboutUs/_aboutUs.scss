@@ -1,0 +1,86 @@
+.about-us-header {
+    .header-body {
+        &__subtitle {
+            @include font($Lato, 2em, 700);
+            color: $titleColor;
+            line-height: 30px;
+            margin-bottom: 24px;
+        }
+        &__content {
+            flex: 0 0 50%;
+        }
+        &__txt {
+            @include font($Lato, 1.4em);
+            color: $txtColor;
+            margin-bottom: 60px;
+            line-height: 160%;
+        }
+        &__btn {
+            .btn {
+                height: 45px;
+                line-height: 43px;
+            }
+        }
+        &__img {
+            flex: 0 0 50%;
+            padding-left: 150px;
+        }
+    }
+    .header {
+        &__subtitle {
+            margin-bottom: 8px;
+        }
+        &__title {
+            margin-bottom: 48px;
+        }
+    }
+}
+
+.main-values {
+    margin: 180px 0px;
+    &__subtitle {
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__body {
+        @include flex(space-between);
+    }
+
+    &__item {
+        position: relative;
+        margin-top: 60px;
+        flex: 0 0 25%;
+        @include flex(center, center, column);
+        padding: 35px;
+        &::after {
+            display: block;
+            content: "";
+            position: absolute;
+            right: 0px;
+            width: 2px;
+            height: 162px;
+            background-color: #dadbdd80;
+        }
+        &:nth-child(4) {
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    &__subhead {
+        @include font($Lato, 2em, 700);
+        color: $titleColor;
+        margin: 27px 0px 8px 0px;
+    }
+
+    &__txt {
+        @include font($Lato, 1.6em);
+        @include text($aboutUsValuesTxtColor, none, center);
+    }
+}

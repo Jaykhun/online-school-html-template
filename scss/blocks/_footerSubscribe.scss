@@ -1,0 +1,54 @@
+.footer-subscribe {
+    position: relative;
+    background-color: $mainBcg;
+    padding: 120px 0px 180px 0px;
+    z-index: 0;
+    &__subtitle {
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 60px;
+        padding: 0px 116px;
+    }
+
+    &__form {
+        text-align: center;
+    }
+
+    &__text {
+        width: 40%;
+        outline: none;
+        border: 1px solid #d7dadd;
+        padding: 13px 16px;
+        @include font($Lato, 1.6em);
+        color: $txtColor;
+        &::-webkit-input-placeholder {
+            color: #9a9ca5;
+        }
+    }
+
+    &__btn {
+        display: inline-block;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        margin-left: 24px;
+    }
+    &__img {
+        .left-img {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+        }
+        .right-img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+        }
+    }
+}

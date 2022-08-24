@@ -1,0 +1,128 @@
+@media screen and (min-width: 2000px) {
+    .header {
+        &__elements {
+            .top-arrow {
+                display: none;
+            }
+            .dots {
+                display: none;
+            }
+            .circle {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1570px) {
+    .header {
+        &__elements {
+            .bottom-arrow {
+                display: none;
+            }
+            .top-arrow {
+                display: none;
+            }
+            .dots {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .header {
+        &__elements {
+            .circle {
+                display: none;
+            }
+        }
+        .header-body {
+            &__btn {
+                img {
+                    display: none;
+                }
+            }
+            &__title {
+                img {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    .header-body {
+        margin-top: 70px;
+        flex-direction: column;
+        &__content {
+            margin-top: 0px;
+            flex: 0 0 100%;
+            margin-bottom: 30px;
+        }
+        &__title {
+            padding-right: 180px;
+        }
+        &__img {
+            flex: 0 0 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .header-body {
+        &__title {
+            padding-right: 80px;
+        }
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .header-body {
+        &__title {
+            padding-right: 0px;
+        }
+    }
+}
+
+@media screen and (max-width: 715px) {
+    .header-body {
+        align-items: center;
+        justify-content: center;
+        &__content {
+            margin-bottom: 40px;
+        }
+        &__title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 5em;
+            line-height: 60px;
+        }
+        &__btn {
+            justify-content: center;
+        }
+        &__play {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .header-body {
+        margin-top: 40px;
+        padding-bottom: 30px;
+        &__title {
+            font-size: 4em;
+            line-height: 50px;
+        }
+        &__btn {
+            a {
+                height: 45px;
+                line-height: 42px;
+                padding: 0 18px;
+                margin: 3px;
+            }
+        }
+    }
+}

@@ -1,0 +1,90 @@
+.main-courses {
+    margin-bottom: 180px;
+    &__top {
+        @include flex(space-between, center);
+        a{
+            display: block;
+        }
+    }
+
+    &__body {
+        margin-top: 60px;
+        @include flex(space-between, center, row, wrap);
+    }
+
+    &__item {
+        display: flex;
+        flex: 0 0 47%;
+        margin-bottom: 30px;
+        &:nth-last-child(1){
+            margin-bottom: 0px;
+        }
+        border: 1px solid $coursesBorderColor;
+        box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+            0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+        border-radius: 4px;
+        transition: 0.1s;
+        &:hover {
+            box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1),
+                0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+        }
+    }
+
+    &__img {
+        img {
+            height: 100%;
+        }
+    }
+    
+    &__btn{
+        display: none;
+    }
+}
+
+.courses {
+    &__content {
+        padding: 33px;
+    }
+
+    &__type {
+        span {
+            cursor: default;
+            @include font($Lato, 1.4em);
+            color: #fff;
+            padding: 1px 8px;
+            border-radius: 4px;
+        }
+    }
+
+    &__name {
+        margin: 20px 0px;
+        @include font($Lato, 2em, 700);
+        @include text($coursesNameColor, capitalize);
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+        p {
+            @include font($Lato, 1.8em, 700);
+            color: $coursesPriceColor;
+        }
+        span {
+            position: relative;
+            display: block;
+            @include font($Lato, 1.8em);
+            color: $coursesTeacherNameColor;
+            margin-left: 16px;
+            &::before {
+                display: block;
+                content: "";
+                position: absolute;
+                left: -8px;
+                top: 3px;
+                width: 1px;
+                height: 16px;
+                background-color: $coursesTeacherNameColor;
+            }
+        }
+    }
+}

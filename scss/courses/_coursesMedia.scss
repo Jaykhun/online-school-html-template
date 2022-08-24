@@ -1,0 +1,35 @@
+@media screen and (max-width: 1023px) {
+    .main {
+        &__item {
+            flex: 0 0 48%;
+        }
+        &__img {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main {
+        &__item {
+            flex: 0 0 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main {
+        &__top {
+            margin-top: 60px;
+            margin-bottom: 30px;
+        }
+        &__title {
+            font-size: 3.6em;
+        }
+        &__item {
+            flex: 0 0 100%;
+        }
+    }
+}

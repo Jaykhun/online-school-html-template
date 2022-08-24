@@ -1,0 +1,64 @@
+@import "variables";
+@import "mixin";
+
+.largeBtn {
+    background: $BtnBcg;
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+    @include font($Lato, 1.6em, 700);
+}
+
+.btn {
+    display: block;
+    @include font($Lato, 1.6em, 700);
+    text-align: center;
+    border-radius: 4px;
+    height: 52px;
+    line-height: 52px;
+    padding: 0px 40px;
+    border: 1px solid $btnColor;
+    color: $btnColor;
+    transition: $transition;
+    &:hover {
+        background: $BtnBcg;
+        color: #fff;
+        border-color: transparent;
+    }
+}
+
+.activeBtn {
+    display: block;
+    @include font($Lato, 1.4em, 700);
+    text-align: center;
+    border-radius: 4px;
+    height: 44px;
+    line-height: 44px;
+    padding: 0px 32px;
+    color: #fff;
+    background: $BtnBcg;
+    transition: $transition;
+}
+
+.title {
+    @include font($Lato, 4.6em, 900);
+    @include text($titleColor);
+}
+
+.subtitle {
+    @include font($Lato, 1.6em, 700);
+    @include text($titleColor, uppercase);
+}
+
+.management {
+    background-color: $coursesManagementColor;
+}
+.marketing {
+    background-color: $coursesMarketingColor;
+}
+.recruting {
+    background-color: $coursesRecrutingColor;
+}
+.design {
+    background-color: $coursesDesignColor;
+}

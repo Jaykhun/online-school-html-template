@@ -1,0 +1,37 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="./style/normalize.css")
+        link(rel="stylesheet" href="./style/icon.css")
+        link(rel="stylesheet" href="./style/slick.css")
+        link(rel="stylesheet" href="./style/style.css")
+        title Online Course
+    body 
+        .wrapper 
+            header.header 
+                .container 
+                    include blocks/headerTop
+                    include blocks/popup
+                    include indexHeader/headerBody
+                    include indexHeader/headerNumber
+            main.main
+                .container
+                    include indexMain/whyCreatex
+                    include indexMain/featuredCourses
+                    include indexMain/howWeDo
+                include indexMain/lectures
+                include blocks/certificate
+                include indexMain/team
+                include blocks/slider
+                include indexMain/post
+                include blocks/footerSubscribe
+            footer.footer
+                include blocks/footer
+        script(src="./js/script.min.js") 
+        script(src="./js/slick.min.js")  
+        script(src="./js/script.js")
+        script(src="./js/tab.js")
+

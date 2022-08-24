@@ -1,0 +1,23 @@
+@media screen and (max-width: 500px) {
+    .main-team {
+        position: relative;
+        padding: 80px 0px;
+        &__subtitle {
+            text-align: center;
+        }
+        &__title {
+            font-size: 3.6em;
+        }
+        &__top {
+            flex-direction: column;
+        }
+
+        .team-slider {
+            &__btn {
+                position: absolute;
+                bottom: 0%;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

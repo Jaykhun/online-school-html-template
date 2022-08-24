@@ -1,0 +1,63 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="./style/normalize.css")
+        link(rel="stylesheet" href="./style/icon.css")
+        link(rel="stylesheet" href="./style/slick.css")
+        link(rel="stylesheet" href="./style/style.css")
+        title About us
+    body
+        .wrapper 
+            header.about-us-header
+                .container 
+                    include blocks/headerTop
+                    include blocks/popup
+                    .header-body
+                        .header-body__content
+                            .header__subtitle.subtitle About us
+                            .header__title.title Createx Online School
+                            .header-body__subtitle Createx Online School is a leader in online studying. We have lots of courses and programs from the main market experts.
+                            .header-body__txt We provide relevant approaches to online learning, internships and employment in the largest companies in the country. Our educational programs help you get a new specialty from scratch. During your studies, we will help you find a job. Check the courses and online events that we organise.
+                            .header-body__btn 
+                                a(href="./events.html").btn Explore events
+                                a(href="./courses.html").activeBtn   Browse courses 
+                        .header-body__img 
+                            img(src="./images/illustration/aboutUs__illustration.svg" alt="illustration")
+            main.main
+                section.main-values
+                    .container
+                        h4.main-values__subtitle.subtitle We always stand for
+                        h3.main-values__title.title Our core values
+                        .main-values__body 
+                            .main-values__item 
+                                .main-values__img 
+                                    img(src="./images/coreValues/approach.png" alt="icon")
+                                .main-values__subhead Structured Approach
+                                .main-values__txt Aenean urna dictum adipiscing nec, cras quisque. Nunc in mauris. 
+                            .main-values__item 
+                                .main-values__img 
+                                    img(src="./images/coreValues/feedbacks.png" alt="icon")
+                                .main-values__subhead Professional Feedbacks
+                                .main-values__txt   Culpa nostrud commodo ea consequat reprehenderit aliquip. 
+                            .main-values__item 
+                                .main-values__img 
+                                    img(src="./images/coreValues/efficiency.png" alt="icon")
+                                .main-values__subhead Efficiency
+                                .main-values__txt  Viverra scelerisque consequat net. Adipisicing esse consequat. 
+                            .main-values__item 
+                                .main-values__img 
+                                    img(src="./images/coreValues/shedule.png" alt="icon")
+                                .main-values__subhead Flexible Shedule
+                                .main-values__txt Aute eiusmod dolore dolore deserunt veniam ad deserunt. 
+                include blocks/slider
+                include indexMain/post
+                include blocks/footerSubscribe
+            footer.footer
+                include blocks/footer
+        script(src="./js/script.min.js") 
+        script(src="./js/slick.min.js")  
+        script(src="./js/script.js")
+

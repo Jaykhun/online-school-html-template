@@ -1,0 +1,106 @@
+@media screen and (max-width: 1200px) {
+    .about-us-header {
+        .header-body {
+            &__img {
+                padding-left: 40px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    .about-us-header {
+        .header-body {
+            &__img {
+                padding-left: 0px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 715px) {
+    .about-us-header {
+        .header-body {
+            &__subtitle {
+                text-align: center;
+            }
+            &__txt {
+                text-align: center;
+                margin-bottom: 25px;
+            }
+        }
+        .header {
+            &__title {
+                text-align: center;
+                margin-bottom: 25px;
+            }
+            &__subtitle {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .about-us-header {
+        .header-body {
+            &__subtitle {
+                display: none;
+            }
+        }
+        .header {
+            &__title {
+                font-size: 3.6em;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1135px) {
+    .main-values {
+        margin: 120px 0px;
+        &__body {
+            flex-wrap: wrap;
+        }
+        &__item {
+            flex: 0 0 50%;
+            &:nth-child(2) {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main-values {
+        &__item {
+            flex: 0 0 100%;
+            margin-top: 20px;
+            &::after {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main-values {
+        margin: 60px 0px;
+        &__title {
+            font-size: 3.6em;
+        }
+        &__item {
+            flex: 0 0 100%;
+            &:nth-child(1) {
+                margin-top: 10px;
+            }
+            margin-top: 0px;
+            &::after {
+                display: none;
+            }
+        }
+    }
+}

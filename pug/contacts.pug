@@ -1,0 +1,48 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="./style/normalize.css")
+        link(rel="stylesheet" href="./style/icon.css")
+        link(rel="stylesheet" href="./style/slick.css")
+        link(rel="stylesheet" href="./style/style.css")
+        title Online Course
+    body 
+        .wrapper 
+            header 
+                .container 
+                    include blocks/headerTop
+                    include blocks/popup
+            main 
+                section.main-contacts
+                    .container
+                        .main-contacts__wrapper 
+                            .main-contacts__content 
+                                .main-contacts__subtitle.subtitle   Contact info
+                                .main-contacts__title.title Get in touch
+                                .main-contacts__info 
+                                    .main-contacts__email 
+                                        p Talk to us:
+                                        a(href="gmail:hello@createx.com")   hello@createx.com
+                                    .main-contacts__call 
+                                        p Call us:
+                                        a(href="tel:(405) 555-0128")   (405) 555-0128
+                                    .main-contacts__address 
+                                        p Address:
+                                        a(href="map:2464 Royal Ln. Mesa, New Jersey 45463, USA")   2464 Royal Ln. Mesa, New Jersey 45463, USA
+                                .main-contacts__subhead Follow us:
+                                .div
+                                    a(href="#").icon-facebook 
+                                    a(href="#").icon-twitter 
+                                    a(href="#").icon-youtube 
+                                    a(href="#").icon-instagram 
+                                    a(href="#").icon-facebook 
+                                    a(href="#").icon-linkedin 
+                            .main-contacts__map 
+                            img(src="./images/map/map.jpg" alt="map")
+            footer.footer
+                include blocks/footer
+        script(src="./js/script.min.js") 
+        script(src="./js/slick.min.js")  
+        script(src="./js/script.js") 

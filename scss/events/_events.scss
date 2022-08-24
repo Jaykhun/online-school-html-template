@@ -1,0 +1,21 @@
+.main {
+    &__subtitle {
+        margin-top: 90px;
+        margin-bottom: 60px;
+        margin-bottom: 8px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main {
+        .container {
+            margin-bottom: 60px;
+        }
+        &__title {
+            font-size: 3.6em;
+        }
+        &__subtitle {
+            margin-top: 60px;
+        }
+    }
+}

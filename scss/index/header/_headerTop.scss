@@ -1,0 +1,69 @@
+.header-top {
+	padding-top: 33px;
+	&__wrapper {
+		@include flex(space-between, center);
+	}
+
+	&__content {
+		flex: 0 0 50%;
+		display: flex;
+	}
+
+	&__logo {
+		img {
+			height: 100%;
+		}
+	}
+
+	&__menu {
+		@include flex(space-between, center);
+		.header-form__btn {
+			display: none;
+		}
+	}
+
+	&__list {
+		margin: 0px 20px;
+		&:first-child {
+			margin-left: 60px;
+		}
+		&:nth-last-child(2) {
+			margin-right: 0px;
+		}
+		a {
+			@include font($Lato, 1.6em, 700);
+			@include text($headerLinkColor, capitalize);
+			transition: color 0.2s ease-in;
+			&:hover {
+				color: $headerHoverLinkColor;
+			}
+			&:visited {
+				color: $headerHoverLinkColor;
+			}
+		}
+	}
+}
+.header-form {
+	display: flex;
+	align-items: center;
+	&__popup {
+		img {
+			display: block;
+			margin-right: 10px;
+		}
+	}
+
+	&__btn {
+		display: block;
+		width: 207px;
+		min-height: 52px;
+		line-height: 52px;
+		margin-right: 58px;
+	}
+
+	&__register {
+		position: relative;
+		color: $headerLinkColor;
+		@include font($Lato, 1.6em, 700);
+	}
+}

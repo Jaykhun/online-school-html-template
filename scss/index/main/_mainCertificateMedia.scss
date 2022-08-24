@@ -1,0 +1,56 @@
+@media screen and (max-width: 1023px) {
+    .certificate {
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        &__content {
+            flex: 0 0 100%;
+            padding-right: 0px;
+            margin-top: 0;
+            margin-bottom: 40px;
+        }
+        &__img {
+            flex: 0 0 100%;
+        }
+        &__title {
+            text-align: center;
+        }
+        &__subtitle {
+            text-align: center;
+        }
+        &__txt {
+            text-align: center;
+        }
+        &__brands {
+            justify-content: space-around;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .certificate {
+        margin: 60px 0px;
+        &__title {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .certificate {
+        &__title {
+            font-size: 3.6em;
+            margin-bottom: 20px;
+        }
+        &__txt{
+            margin-bottom: 20px;
+        }
+        &__brands {
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+}

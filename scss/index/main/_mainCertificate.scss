@@ -1,0 +1,32 @@
+.certificate {
+    margin: 120px auto;
+    &__wrapper {
+        @include flex(space-between, center);
+    }
+
+    &__content {
+        margin-top: -70px;
+        padding-right: 135px;
+    }
+
+    &__subtitle {
+        margin-bottom: 8px;
+    }
+
+    &__title {
+        margin-bottom: 48px;
+    }
+
+    &__txt {
+        margin-bottom: 30px;
+        @include font($Lato, 1.6em);
+        color: $txtColor;
+    }
+
+    &__brands {
+        @include flex(space-between);
+        img {
+            display: block;
+        }
+    }
+}

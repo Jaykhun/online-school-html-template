@@ -1,0 +1,43 @@
+@media screen and (min-width: 1925px) {
+    .footer-subscribe {
+        &__img {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .footer-subscribe {
+        padding: 60px 0px;
+        &__title {
+            padding: 0px;
+        }
+        &__img {
+            display: none;
+        }
+        &__text {
+            width: 60%;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer-subscribe {
+        padding: 60px 0px;
+        &__title {
+            font-size: 3.6em;
+            margin-bottom: 40px;
+        }
+        &__form {
+            display: flex;
+            flex-direction: column;
+        }
+        &__btn {
+            margin-left: 0px;
+            margin-top: 20px;
+        }
+        &__text {
+            width: 100%;
+        }
+    }
+}
