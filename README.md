@@ -10,7 +10,7 @@
 
 ## About
 
-My multi-page website provides all the information you need about my school. The homepage gives you an overview of my school, while the other pages provide more detailed information about my courses, faculty, and admissions process.
+My multi-page website provides all the information you need about online school. The homepage gives you an overview of my school, while the other pages provide more detailed information about my courses, faculty, and admissions process.
 
 To make my website user-friendly and easy to navigate, I've used JavaScript and jQuery to create interactive elements such as drop-down menus, pop-ups, and animation effects. This makes it easy for you to find the information you need and adds an element of fun to your browsing experience.
 
