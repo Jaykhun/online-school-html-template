@@ -14,7 +14,7 @@ My multi-page website provides all the information you need about my school. The
 
 To make my website user-friendly and easy to navigate, I've used JavaScript and jQuery to create interactive elements such as drop-down menus, pop-ups, and animation effects. This makes it easy for you to find the information you need and adds an element of fun to your browsing experience.
 
-I've also used SCSS to create a consistent and visually appealing design throughout my website, ensuring that it looks great on all devices and screen sizes, whether you're browsing on a desktop, tablet, or smartphone.
+I've also used Pug to simplify my HTML code and make it more readable and maintainable. Additionally, I've used SCSS to create a consistent and visually appealing design throughout my website, ensuring that it looks great on all devices and screen sizes, whether you're browsing on a desktop, tablet, or smartphone.
 
 In addition, my website is cross-browser compatible, which means that it works seamlessly on all modern web browsers such as Google Chrome, Mozilla Firefox, Safari, and Microsoft Edge. This ensures that you can access my website from any device or browser of your choice.
 
