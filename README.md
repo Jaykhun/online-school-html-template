@@ -5,6 +5,7 @@
 <p>
    <img src="https://img.shields.io/badge/library-jquery%20v3.3.1-%230865A7" alt="library">
    <img src="https://img.shields.io/badge/languages-javascript-%23E9D44D" alt="languages">
+   <img src="https://img.shields.io/badge/module%20builder-pug-%2353312A" alt="languages">
    <img src="https://img.shields.io/badge/license-MIT-%23A10000" alt="license">
 </p>
 
