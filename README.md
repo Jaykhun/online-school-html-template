@@ -31,7 +31,3 @@ My Project is built using the following technologies:
 ## Developers
 
 - [Jaykhun](https://github.com/Jaykhun)
-
-## License
-
-Project react-ecommerce is distributed under the MIT license
